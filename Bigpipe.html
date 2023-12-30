@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #hiddenDiv1 {
+            display: none;
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin-top: 20px;
+        }
+        #hiddenDiv2 {
+            display: none;
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin-top: 20px;
+        }
+        #hiddenDiv3 {
+            display: none;
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin-top: 20px;
+        }
+    </style>
+    <title>BigPipe Example </title>
+</head>
+<body>
+
+    <h1>BigPipe Example</h1>
+
+    <div id="hiddenDiv1">
+        <p>Example 1</p>
+    </div>
+    <div id="hiddenDiv2">
+        <p>Example 2</p>
+    </div>
+    <div id="hiddenDiv3">
+        <p>Example 3</p>
+    </div>
+
+    <script>
+        const delay = 5000;
+
+        function showHiddenDiv1() {
+            const hiddenDiv1 = document.getElementById('hiddenDiv1');
+            hiddenDiv1.style.display = 'block';
+        }
+        setTimeout(function () {
+            setTimeout(function () {
+                showHiddenDiv1();
+            }, delay);
+        }, 0);
+        function showHiddenDiv2() {
+            const hiddenDiv2 = document.getElementById('hiddenDiv2');
+            hiddenDiv2.style.display = 'block';
+        }
+        setTimeout(function () {
+            setTimeout(function () {
+                showHiddenDiv2();
+            }, delay);
+        }, 0);
+    
+        function showHiddenDiv3() {
+            const hiddenDiv3 = document.getElementById('hiddenDiv3');
+            hiddenDiv3.style.display = 'block';
+        }
+        setTimeout(function () {
+            setTimeout(function () {
+                showHiddenDiv3();
+            }, delay);
+        }, 0);
+    </script>
+
+</body>
+</html>
